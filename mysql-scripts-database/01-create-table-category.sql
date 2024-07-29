@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS tb_category (
+	id_category INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	ds_category VARCHAR(150) NOT NULL,
+	dt_created  DATETIME NOT NULL,
+	fl_active   BOOLEAN NOT NULL
+
+);
