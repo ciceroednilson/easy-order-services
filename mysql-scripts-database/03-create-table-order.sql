@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS tb_order (
+	id_order    INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	vl_total    DECIMAL(10,2) NOT NULL,
+	dt_created  DATETIME NOT NULL,
+	dt_updated  DATETIME NOT NULL,
+	fl_active   BOOLEAN NOT NULL
+);
