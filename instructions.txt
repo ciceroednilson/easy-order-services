@@ -25,3 +25,9 @@ docker run --name elasticsearch --network=lab-network -p 9200:9200 -p 9300:9300 
 
 Endereço graylog
   http://localhost:9000/
+
+
+
+ swagger categories
+ 
+  http://localhost:8080/q/swagger-ui

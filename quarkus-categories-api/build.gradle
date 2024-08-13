@@ -17,6 +17,7 @@ dependencies {
     implementation 'io.quarkus:quarkus-jdbc-mysql'
     implementation 'io.quarkus:quarkus-arc'
     implementation 'org.jboss.logging:jboss-logging:3.6.0.Final'
+    implementation 'io.quarkus:quarkus-smallrye-openapi'
     implementation 'mysql:mysql-connector-java:8.0.33'
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
