@@ -9,17 +9,14 @@ import br.com.ciceroednilson.domain.usercases.FindCategoryUserCases;
 import br.com.ciceroednilson.domain.usercases.SearchAllCategoriesUserCases;
 import br.com.ciceroednilson.domain.usercases.UpdateCategoryUserCases;
 import jakarta.inject.Inject;
-import jakarta.ws.rs.Consumes;
-import jakarta.ws.rs.DELETE;
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.POST;
-import jakarta.ws.rs.PUT;
-import jakarta.ws.rs.Path;
+import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import java.util.List;
 
 @Path("/category")
+@Produces(MediaType.APPLICATION_JSON)
+@Consumes(MediaType.APPLICATION_JSON)
 public class CategoryResource {
 
     private final CreateCategoryUserCases createCategoryUserCases;
@@ -43,7 +40,6 @@ public class CategoryResource {
     }
 
     @POST
-    @Consumes(MediaType.APPLICATION_JSON)
     public Response create(CategoryRequestModel model) {
         this.createCategoryUserCases.create(model.toEntity());
         return Response.ok().build();
@@ -51,8 +47,7 @@ public class CategoryResource {
 
     @PUT
     @Path("/{id}")
-    @Consumes(MediaType.APPLICATION_JSON)
-    public Response update(final Long id, final CategoryRequestModel model) {
+    public Response update(final @PathParam("id") Long id, final CategoryRequestModel model) {
         model.setId(id);
         this.updateCategoryUserCases.update(model.toEntity());
         return Response.ok().build();
@@ -60,14 +55,14 @@ public class CategoryResource {
 
     @DELETE
     @Path("/{id}")
-    public Response delete(final long id) {
-        this.deleteCategoryUserCases.delete(id);
+    public Response delete(final @PathParam("id") String id) {
+        this.deleteCategoryUserCases.delete(Long.parseLong(id));
         return Response.ok().build();
     }
 
     @GET
     @Path("/{id}")
-    public CategoryResponseModel find(final long id) {
+    public CategoryResponseModel find(final @PathParam("id") Long id) {
         return this.findCategoryUserCases.find(id).toModel();
     }
 

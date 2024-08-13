@@ -1,22 +1,18 @@
 package br.com.ciceroednilson.domain.entities;
 
 import br.com.ciceroednilson.data.model.CategoryResponseModel;
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
+import jakarta.persistence.*;
+
 import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
 @Table(name = "tb_category")
-public class CategoryEntity extends PanacheEntity {
+public class CategoryEntity extends PanacheEntityBase {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_category")
     private Long idCategory;
 

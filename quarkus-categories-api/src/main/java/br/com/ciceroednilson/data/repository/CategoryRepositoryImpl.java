@@ -14,11 +14,13 @@ public class CategoryRepositoryImpl implements CategoryRepository {
 
     final NotFoundException exception = new NotFoundException("Category not found!");
 
+    @Transactional(value = Transactional.TxType.REQUIRES_NEW)
     @Override
     public void create(final CategoryEntity categoryEntity) {
         categoryEntity.persist();
     }
 
+    @Transactional
     @Override
     public void delete(final long id) {
         final CategoryEntity category = findById(id);
@@ -35,6 +37,7 @@ public class CategoryRepositoryImpl implements CategoryRepository {
         category.persist();
     }
 
+    @Transactional
     @Override
     public CategoryEntity findById(final long id) {
         final Optional<CategoryEntity> optCategoryEntity =
