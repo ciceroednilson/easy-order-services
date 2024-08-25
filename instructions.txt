@@ -10,7 +10,7 @@ graylog
  user: admin
  pwd: admin
 
-docker run --name mongo --network=lab-network -d mongo:3
+docker run --name mongo --network=lab-network -d mongo:5.0
  
 docker run --name elasticsearch --network=lab-network -p 9200:9200 -p 9300:9300 \
     -e ES_JAVA_OPTS="-Xms2g -Xmx4g" \
@@ -18,10 +18,18 @@ docker run --name elasticsearch --network=lab-network -p 9200:9200 -p 9300:9300 
     -e "bootstrap.memory_lock=true" --ulimit memlock=-1:-1 \
     -d docker.elastic.co/elasticsearch/elasticsearch:5.6.11
 
- docker run --name graylog --network=lab-network --link mongo --link elasticsearch \
-    -p 9000:9000 -p 12201:12201 -p 514:514 -p 5555:5555 \
-    -e GRAYLOG_WEB_ENDPOINT_URI="http://127.0.0.1:9000/api" \
-    -d graylog/graylog:2.4.6-1
+
+
+docker run -d --name graylog  --network=lab-network \
+  -e GRAYLOG_PASSWORD_SECRET=$(openssl rand -base64 32) \
+  -e GRAYLOG_ROOT_PASSWORD_SHA2=$(echo -n "123456" | sha256sum | awk '{print $1}') \
+  -e GRAYLOG_HTTP_EXTERNAL_URI=http://localhost:9000/ \
+  -p 9000:9000 \
+  -p 12201:12201 \
+  --link mongo \
+  --link elasticsearch \
+  graylog/graylog:6.0
+
 
 Endereço graylog
   http://localhost:9000/
@@ -31,3 +39,14 @@ Endereço graylog
  swagger categories
  
   http://localhost:8080/q/swagger-ui
+
+
+https://quarkus.io/guides/centralized-log-management
+
+
+./gradlew addExtension --extensions='logging-gelf'
+
+
+curl -H "Content-Type: application/json" -H "Authorization: Basic YWRtaW46YWRtaW4=" -H "X-Requested-By: curl" -X POST -v -d \
+'{"title":"udp input","configuration":{"recv_buffer_size":262144,"bind_address":"0.0.0.0","port":12201,"decompress_size_limit":8388608},"type":"org.graylog2.inputs.gelf.udp.GELFUDPInput","global":true}' \
+http://localhost:9000/api/system/inputs
