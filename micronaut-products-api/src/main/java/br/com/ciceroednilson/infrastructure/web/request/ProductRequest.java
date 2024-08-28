@@ -1,9 +1,14 @@
-package br.com.ciceroednilson.domain.model;
+package br.com.ciceroednilson.infrastructure.web.request;
+
+import io.micronaut.core.annotation.Introspected;
+import io.micronaut.serde.annotation.Serdeable;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-public class ProductModel {
+@Introspected
+@Serdeable
+public class ProductRequest {
 
     private Long id;
     private String product;

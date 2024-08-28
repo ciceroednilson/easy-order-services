@@ -1,0 +1,157 @@
+2024-08-27 22:59:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-27 22:59:43 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28b576a9
+2024-08-27 22:59:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-27 22:59:44 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-27 22:59:44 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 22:59:44 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 22:59:44 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-27 22:59:46 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 4188ms. Server Running: http://localhost:8080
+2024-08-27 22:59:49 [default-nioEventLoopGroup-1-3] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-08-27 22:59:52 [default-nioEventLoopGroup-1-3] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-08-27 23:01:16 [Thread-0] INFO  io.micronaut.runtime.Micronaut - Embedded Application shutting down
+2024-08-27 23:01:17 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-27 23:01:17 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-27 23:05:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-27 23:05:14 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a078481
+2024-08-27 23:05:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-27 23:05:15 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-27 23:05:15 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 23:05:15 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 23:05:15 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-27 23:05:17 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 4491ms. Server Running: http://localhost:8080
+2024-08-27 23:05:35 [default-nioEventLoopGroup-1-3] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-08-27 23:06:38 [Thread-0] INFO  io.micronaut.runtime.Micronaut - Embedded Application shutting down
+2024-08-27 23:06:38 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-27 23:06:38 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-27 23:07:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-27 23:07:06 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63e5e5b4
+2024-08-27 23:07:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-27 23:07:07 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-27 23:07:07 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 23:07:07 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 23:07:07 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-27 23:07:09 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 5433ms. Server Running: http://localhost:8080
+2024-08-27 23:07:13 [default-nioEventLoopGroup-1-3] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-08-27 23:12:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-27 23:12:13 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3003697
+2024-08-27 23:12:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-27 23:12:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-27 23:12:14 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 23:12:14 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 23:12:14 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-27 23:12:16 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 4608ms. Server Running: http://localhost:8080
+2024-08-27 23:13:08 [Thread-0] INFO  io.micronaut.runtime.Micronaut - Embedded Application shutting down
+2024-08-27 23:13:08 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-27 23:13:08 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-27 23:13:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-27 23:13:17 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ff57625
+2024-08-27 23:13:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-27 23:13:18 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-27 23:13:18 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 23:13:19 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 23:13:19 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-27 23:13:21 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 6089ms. Server Running: http://localhost:8080
+2024-08-27 23:15:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-27 23:15:37 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b1637e1
+2024-08-27 23:15:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-27 23:15:38 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-27 23:15:38 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 23:15:38 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 23:15:38 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-27 23:15:40 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 4499ms. Server Running: http://localhost:8080
+2024-08-27 23:16:10 [Thread-0] INFO  io.micronaut.runtime.Micronaut - Embedded Application shutting down
+2024-08-27 23:16:10 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-27 23:16:10 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-27 23:17:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-27 23:17:35 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4aac85fa
+2024-08-27 23:17:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-27 23:17:36 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-27 23:17:36 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 23:17:36 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 23:17:36 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-27 23:17:38 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 5038ms. Server Running: http://localhost:8080
+2024-08-27 23:18:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-27 23:18:34 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f574cc2
+2024-08-27 23:18:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-27 23:18:35 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-27 23:18:35 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 23:18:37 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 4509ms. Server Running: http://localhost:8080
+2024-08-27 23:18:41 [default-nioEventLoopGroup-1-3] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-08-27 23:18:43 [default-nioEventLoopGroup-1-3] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-08-27 23:21:33 [Thread-0] INFO  io.micronaut.runtime.Micronaut - Embedded Application shutting down
+2024-08-27 23:21:33 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-27 23:21:33 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-27 23:21:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-27 23:21:51 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57b9e423
+2024-08-27 23:21:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-27 23:21:51 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-27 23:21:51 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 23:21:54 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 5669ms. Server Running: http://localhost:8080
+2024-08-27 23:22:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-27 23:22:31 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@551de37d
+2024-08-27 23:22:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-27 23:22:32 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-27 23:22:32 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 23:22:34 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 5662ms. Server Running: http://localhost:8080
+2024-08-27 23:24:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-27 23:24:22 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3005db4a
+2024-08-27 23:24:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-27 23:24:23 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-27 23:24:23 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 23:24:25 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 4915ms. Server Running: http://localhost:8080
+2024-08-27 23:24:31 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /swagger-ui/index.html
+2024-08-27 23:24:32 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /swagger-ui/res/swagger-ui.css
+2024-08-27 23:25:46 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-08-27 23:25:46 [default-nioEventLoopGroup-1-5] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-08-27 23:28:03 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /swagger-ui/index.html
+2024-08-27 23:28:03 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /swagger-ui/res/swagger-ui.css
+2024-08-27 23:28:40 [main] INFO  i.m.aot.MicronautAotOptimizer - Analysis will be performed with active environments: []
+2024-08-27 23:28:54 [main] INFO  i.m.aot.MicronautAotOptimizer - Analysis will be performed with active environments: []
+2024-08-27 23:29:08 [Test worker] INFO  i.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment - Established active environments: [test]
+2024-08-27 23:29:09 [Test worker] INFO  i.m.s.ObjectMappers$ObjectMapperContext$1 - Established active environments: [test]
+2024-08-27 23:29:09 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-27 23:29:10 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3eabe84a
+2024-08-27 23:29:10 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-27 23:29:10 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-27 23:29:10 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 23:29:12 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-27 23:29:12 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-27 23:29:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-27 23:29:32 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44d70181
+2024-08-27 23:29:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-27 23:29:33 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-27 23:29:33 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 23:29:34 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 3692ms. Server Running: http://localhost:8080
+2024-08-27 23:29:42 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /swagger-ui/index.html
+2024-08-27 23:29:42 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /swagger-ui/res/swagger-ui.css
+2024-08-27 23:29:51 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /swagger-ui/view/index.html
+2024-08-27 23:29:51 [default-nioEventLoopGroup-1-4] DEBUG i.m.http.server.RequestLifecycle - No matching route: GET /swagger-ui/view/index.html
+2024-08-27 23:29:51 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /favicon.ico
+2024-08-27 23:29:51 [default-nioEventLoopGroup-1-4] DEBUG i.m.http.server.RequestLifecycle - No matching route: GET /favicon.ico
+2024-08-27 23:30:01 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /swagger-ui/views/index.html
+2024-08-27 23:30:01 [default-nioEventLoopGroup-1-4] DEBUG i.m.http.server.RequestLifecycle - No matching route: GET /swagger-ui/views/index.html
+2024-08-27 23:30:01 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /favicon.ico
+2024-08-27 23:30:01 [default-nioEventLoopGroup-1-4] DEBUG i.m.http.server.RequestLifecycle - No matching route: GET /favicon.ico
+2024-08-27 23:30:23 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /swagger/views/swagger-ui/index.html
+2024-08-27 23:30:23 [default-nioEventLoopGroup-1-4] DEBUG i.m.http.server.RequestLifecycle - No matching route: GET /swagger/views/swagger-ui/index.html
+2024-08-27 23:30:23 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /favicon.ico
+2024-08-27 23:30:23 [default-nioEventLoopGroup-1-4] DEBUG i.m.http.server.RequestLifecycle - No matching route: GET /favicon.ico
+2024-08-27 23:30:41 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /swagger/
+2024-08-27 23:30:41 [default-nioEventLoopGroup-1-4] DEBUG i.m.http.server.RequestLifecycle - No matching route: GET /swagger/
+2024-08-27 23:30:41 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /favicon.ico
+2024-08-27 23:30:41 [default-nioEventLoopGroup-1-4] DEBUG i.m.http.server.RequestLifecycle - No matching route: GET /favicon.ico
+2024-08-27 23:34:51 [Thread-0] INFO  io.micronaut.runtime.Micronaut - Embedded Application shutting down
+2024-08-27 23:34:52 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-27 23:34:52 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-27 23:34:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-27 23:34:59 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44d70181
+2024-08-27 23:34:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-27 23:34:59 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-27 23:34:59 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 23:35:01 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 5004ms. Server Running: http://localhost:8080
+2024-08-27 23:35:03 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /swagger/
+2024-08-27 23:35:03 [default-nioEventLoopGroup-1-2] DEBUG i.m.http.server.RequestLifecycle - No matching route: GET /swagger/
+2024-08-27 23:35:03 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /favicon.ico
+2024-08-27 23:35:03 [default-nioEventLoopGroup-1-2] DEBUG i.m.http.server.RequestLifecycle - No matching route: GET /favicon.ico
+2024-08-27 23:35:09 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /swagger-ui/index.html
+2024-08-27 23:35:09 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /swagger-ui/res/swagger-ui.css

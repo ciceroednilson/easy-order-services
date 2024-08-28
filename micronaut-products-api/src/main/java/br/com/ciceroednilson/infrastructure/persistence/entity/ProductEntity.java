@@ -1,17 +1,45 @@
-package br.com.ciceroednilson.domain.model;
+package br.com.ciceroednilson.infrastructure.persistence.entity;
+
+import io.micronaut.core.annotation.Introspected;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-public class ProductModel {
+@Entity
+@Table(name = "tb_product")
+@Introspected
+public class ProductEntity {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_product")
     private Long id;
+
+    @Column(name = "ds_product", nullable = false, length = 150)
     private String product;
+
+    @Column(name = "id_category", nullable = false)
     private Long idCategory;
+
+    @Column(name = "vl_product", nullable = false)
     private BigDecimal price;
+
+    @Column(name = "qt_product", nullable = false)
     private Integer total;
+
+    @Column(name = "dt_created", nullable = false)
     private LocalDateTime created;
+
+    @Column(name = "dt_updated", nullable = false)
     private LocalDateTime updated;
+
+    @Column(name = "fl_active", nullable = false)
     private Boolean active;
 
     public Long getId() {
