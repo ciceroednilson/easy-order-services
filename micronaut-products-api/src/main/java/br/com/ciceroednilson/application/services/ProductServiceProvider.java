@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface ProductServiceProvider {
 
-    void save(ProductModel model);
+    void save(ProductModel model) throws Exception;
     void update(ProductModel model);
     void delete(Long id);
     ProductModel findById(Long id);

@@ -1,8 +1,10 @@
 package br.com.ciceroednilson.domain.service;
 
 import br.com.ciceroednilson.application.mapper.ProductMapper;
+import br.com.ciceroednilson.application.services.CategoryServiceProvider;
 import br.com.ciceroednilson.application.services.ProductServiceProvider;
 import br.com.ciceroednilson.domain.model.ProductModel;
+import br.com.ciceroednilson.infrastructure.client.entity.Category;
 import br.com.ciceroednilson.infrastructure.persistence.ProductPersistence;
 import br.com.ciceroednilson.infrastructure.persistence.entity.ProductEntity;
 import jakarta.inject.Inject;
@@ -18,14 +20,23 @@ public class ProductService implements ProductServiceProvider {
 
     private static final Logger LOG = LoggerFactory.getLogger(ProductService.class);
     protected ProductPersistence productPersistence;
+    protected CategoryServiceProvider categoryServiceProvider;
 
     @Inject
-    public ProductService(final ProductPersistence productPersistence) {
+    public ProductService(
+            final ProductPersistence productPersistence,
+            final CategoryServiceProvider categoryServiceProvider
+    ) {
         this.productPersistence = productPersistence;
+        this.categoryServiceProvider = categoryServiceProvider;
     }
 
     @Override
-    public void save(final ProductModel model) {
+    public void save(final ProductModel model) throws Exception {
+        LOG.info("Finding a category by id");
+        final Category category = this.categoryServiceProvider.findById(model.getIdCategory());
+        LOG.info("Category found {}-{}",category.getId(), category.getName());
+
         LOG.info("saving a new product.");
         final ProductEntity entity = ProductMapper.toEntity(model);
         this.productPersistence.save(entity);

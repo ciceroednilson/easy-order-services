@@ -17,10 +17,13 @@ import io.micronaut.http.annotation.PathVariable;
 import io.micronaut.http.annotation.Post;
 import io.micronaut.http.annotation.Produces;
 import io.micronaut.http.annotation.Put;
+import io.micronaut.scheduling.TaskExecutors;
+import io.micronaut.scheduling.annotation.ExecuteOn;
 import jakarta.inject.Inject;
 
 import java.util.List;
 
+@ExecuteOn(TaskExecutors.BLOCKING)
 @Controller("/product")
 public class ProductController {
 
@@ -32,7 +35,7 @@ public class ProductController {
     }
 
     @Post(uri = "/", consumes = MediaType.APPLICATION_JSON)
-    public HttpResponse<Void> save(@Body ProductRequest request) {
+    public HttpResponse<Void> save(@Body ProductRequest request) throws Exception {
         final ProductModel model = ProductMapper.toModel(request);
         this.productServiceProvider.save(model);
         return HttpResponse.ok();
