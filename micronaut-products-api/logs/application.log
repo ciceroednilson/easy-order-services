@@ -2038,3 +2038,129 @@ Caused by: java.net.BindException: Address already in use
 2024-09-24 22:46:01 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
 2024-09-24 22:46:05 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-09-24 22:46:05 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-24 22:51:15 [Test worker] INFO  i.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment - Established active environments: [test]
+2024-09-24 22:51:16 [Test worker] INFO  i.m.s.ObjectMappers$ObjectMapperContext$1 - Established active environments: [test]
+2024-09-24 22:51:16 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-24 22:51:17 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77d680e6
+2024-09-24 22:51:17 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-24 22:51:17 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24 22:51:17 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-24 22:51:21 [Test worker] INFO  b.c.c.domain.service.ProductService - find a product by id:1
+2024-09-24 22:51:21 [Test worker] INFO  b.c.c.domain.service.ProductService - finding all products
+2024-09-24 22:51:21 [Test worker] INFO  b.c.c.domain.service.ProductService - deleting a product:1
+2024-09-24 22:51:21 [Test worker] INFO  b.c.c.domain.service.ProductService - product deleted successfully:1
+2024-09-24 22:51:21 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-24 22:51:21 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-24 23:01:33 [Test worker] INFO  i.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment - Established active environments: [test]
+2024-09-24 23:01:34 [Test worker] INFO  i.m.s.ObjectMappers$ObjectMapperContext$1 - Established active environments: [test]
+2024-09-24 23:01:34 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-24 23:01:35 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ef1695a
+2024-09-24 23:01:35 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-24 23:01:35 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24 23:01:35 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-24 23:01:39 [Test worker] INFO  b.c.c.domain.service.ProductService - Finding a category by id
+2024-09-24 23:01:39 [Test worker] INFO  b.c.c.domain.service.ProductService - Category found 1-Games
+2024-09-24 23:01:39 [Test worker] INFO  b.c.c.domain.service.ProductService - saving a new product.
+2024-09-24 23:01:39 [Test worker] INFO  b.c.c.domain.service.ProductService - product saved successfully.
+2024-09-24 23:01:39 [Test worker] INFO  b.c.c.domain.service.ProductService - find a product by id:1
+2024-09-24 23:01:39 [Test worker] INFO  b.c.c.domain.service.ProductService - finding all products
+2024-09-24 23:01:39 [Test worker] INFO  b.c.c.domain.service.ProductService - deleting a product:1
+2024-09-24 23:01:39 [Test worker] INFO  b.c.c.domain.service.ProductService - product deleted successfully:1
+2024-09-24 23:01:39 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-24 23:01:39 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-24 23:03:07 [Test worker] INFO  i.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment - Established active environments: [test]
+2024-09-24 23:03:07 [Test worker] INFO  i.m.s.ObjectMappers$ObjectMapperContext$1 - Established active environments: [test]
+2024-09-24 23:03:08 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-24 23:03:08 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56f521c6
+2024-09-24 23:03:08 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-24 23:03:09 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24 23:03:09 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-24 23:03:13 [Test worker] INFO  b.c.c.domain.service.ProductService - updating a product.
+2024-09-24 23:03:13 [Test worker] INFO  b.c.c.domain.service.ProductService - product updated successfully.
+2024-09-24 23:03:13 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-24 23:03:13 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-24 23:03:44 [Test worker] INFO  i.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment - Established active environments: [test]
+2024-09-24 23:03:45 [Test worker] INFO  i.m.s.ObjectMappers$ObjectMapperContext$1 - Established active environments: [test]
+2024-09-24 23:03:45 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-24 23:03:46 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1aa6e3c0
+2024-09-24 23:03:46 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-24 23:03:47 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24 23:03:47 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-24 23:03:50 [Test worker] INFO  b.c.c.domain.service.ProductService - deleting a product:1
+2024-09-24 23:03:50 [Test worker] INFO  b.c.c.domain.service.ProductService - product deleted successfully:1
+2024-09-24 23:03:51 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-24 23:03:51 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-24 23:05:19 [Test worker] INFO  i.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment - Established active environments: [test]
+2024-09-24 23:05:19 [Test worker] INFO  i.m.s.ObjectMappers$ObjectMapperContext$1 - Established active environments: [test]
+2024-09-24 23:05:19 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-24 23:05:20 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28501a4b
+2024-09-24 23:05:20 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-24 23:05:20 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24 23:05:20 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-24 23:05:24 [Test worker] INFO  b.c.c.domain.service.ProductService - find a product by id:1
+2024-09-24 23:05:25 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-24 23:05:25 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-24 23:06:34 [Test worker] INFO  i.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment - Established active environments: [test]
+2024-09-24 23:06:35 [Test worker] INFO  i.m.s.ObjectMappers$ObjectMapperContext$1 - Established active environments: [test]
+2024-09-24 23:06:35 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-24 23:06:36 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56f521c6
+2024-09-24 23:06:36 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-24 23:06:36 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24 23:06:36 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-24 23:06:40 [Test worker] INFO  b.c.c.domain.service.ProductService - finding all products
+2024-09-24 23:06:40 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-24 23:06:40 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-24 23:07:16 [Test worker] INFO  i.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment - Established active environments: [test]
+2024-09-24 23:07:16 [Test worker] INFO  i.m.s.ObjectMappers$ObjectMapperContext$1 - Established active environments: [test]
+2024-09-24 23:07:17 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-24 23:07:17 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17b6d426
+2024-09-24 23:07:17 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-24 23:07:18 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24 23:07:18 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-24 23:07:21 [Test worker] INFO  b.c.c.domain.service.ProductService - Finding a category by id
+2024-09-24 23:07:21 [Test worker] INFO  b.c.c.domain.service.ProductService - Category found 1-Games
+2024-09-24 23:07:21 [Test worker] INFO  b.c.c.domain.service.ProductService - saving a new product.
+2024-09-24 23:07:21 [Test worker] INFO  b.c.c.domain.service.ProductService - product saved successfully.
+2024-09-24 23:07:21 [Test worker] INFO  b.c.c.domain.service.ProductService - find a product by id:1
+2024-09-24 23:07:21 [Test worker] INFO  b.c.c.domain.service.ProductService - updating a product.
+2024-09-24 23:07:21 [Test worker] INFO  b.c.c.domain.service.ProductService - product updated successfully.
+2024-09-24 23:07:21 [Test worker] INFO  b.c.c.domain.service.ProductService - finding all products
+2024-09-24 23:07:21 [Test worker] INFO  b.c.c.domain.service.ProductService - deleting a product:1
+2024-09-24 23:07:21 [Test worker] INFO  b.c.c.domain.service.ProductService - product deleted successfully:1
+2024-09-24 23:07:22 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-24 23:07:22 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-24 23:07:55 [main] INFO  i.m.aot.MicronautAotOptimizer - Analysis will be performed with active environments: []
+2024-09-24 23:08:15 [main] INFO  i.m.aot.MicronautAotOptimizer - Analysis will be performed with active environments: []
+2024-09-24 23:08:34 [Test worker] INFO  i.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment - Established active environments: [test]
+2024-09-24 23:08:35 [Test worker] INFO  i.m.s.ObjectMappers$ObjectMapperContext$1 - Established active environments: [test]
+2024-09-24 23:08:35 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-24 23:08:36 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a175162
+2024-09-24 23:08:36 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-24 23:08:36 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24 23:08:37 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-24 23:08:39 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-24 23:08:39 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-24 23:08:39 [Test worker] INFO  i.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment - Established active environments: [test]
+2024-09-24 23:08:39 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-09-24 23:08:39 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@470a446f
+2024-09-24 23:08:39 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-09-24 23:08:39 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-24 23:08:41 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-09-24 23:08:41 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-09-24 23:08:41 [Test worker] INFO  i.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment - Established active environments: [test]
+2024-09-24 23:08:41 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-09-24 23:08:41 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@362fd4e9
+2024-09-24 23:08:41 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-09-24 23:08:42 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-24 23:08:42 [Test worker] INFO  b.c.c.domain.service.ProductService - Finding a category by id
+2024-09-24 23:08:42 [Test worker] INFO  b.c.c.domain.service.ProductService - Category found 1-Games
+2024-09-24 23:08:42 [Test worker] INFO  b.c.c.domain.service.ProductService - saving a new product.
+2024-09-24 23:08:42 [Test worker] INFO  b.c.c.domain.service.ProductService - product saved successfully.
+2024-09-24 23:08:42 [Test worker] INFO  b.c.c.domain.service.ProductService - find a product by id:1
+2024-09-24 23:08:42 [Test worker] INFO  b.c.c.domain.service.ProductService - updating a product.
+2024-09-24 23:08:42 [Test worker] INFO  b.c.c.domain.service.ProductService - product updated successfully.
+2024-09-24 23:08:42 [Test worker] INFO  b.c.c.domain.service.ProductService - finding all products
+2024-09-24 23:08:42 [Test worker] INFO  b.c.c.domain.service.ProductService - deleting a product:1
+2024-09-24 23:08:42 [Test worker] INFO  b.c.c.domain.service.ProductService - product deleted successfully:1
+2024-09-24 23:08:42 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-09-24 23:08:42 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
