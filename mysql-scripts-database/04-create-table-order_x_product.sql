@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS tb_order_x_product (
-	id_order    BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	id_product  BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	id_order    BIGINT NOT NULL,
+	id_product  BIGINT NOT NULL,
 	dt_created  DATETIME NOT NULL,
 	dt_updated  DATETIME NOT NULL,
 	FOREIGN KEY (id_product) REFERENCES tb_product(id_product),

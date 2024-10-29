@@ -2164,3 +2164,254 @@ Caused by: java.net.BindException: Address already in use
 2024-09-24 23:08:42 [Test worker] INFO  b.c.c.domain.service.ProductService - product deleted successfully:1
 2024-09-24 23:08:42 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
 2024-09-24 23:08:42 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-10-16 07:28:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 07:28:05 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6bfdb014
+2024-10-16 07:28:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 07:28:06 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-10-16 07:28:06 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 07:28:08 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 4095ms. Server Running: http://localhost:9000
+2024-10-16 07:28:12 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 07:28:12 [virtual-executor1] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:00:21 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:00:21 [virtual-executor2] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:05:21 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:05:21 [virtual-executor3] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:06:23 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:06:23 [virtual-executor4] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:08:25 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:08:25 [virtual-executor5] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:08:32 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:08:32 [virtual-executor6] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:10:56 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:10:56 [virtual-executor7] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:14:28 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:14:28 [virtual-executor8] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:16:42 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:16:42 [virtual-executor9] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:17:12 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:17:12 [virtual-executor10] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:28:50 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/411
+2024-10-16 08:28:50 [virtual-executor11] INFO  b.c.c.domain.service.ProductService - find a product by id:411
+2024-10-16 08:28:50 [virtual-executor11] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 404 - GET /product/411
+2024-10-16 08:28:53 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:28:53 [virtual-executor12] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:29:18 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/findAll
+2024-10-16 08:29:18 [virtual-executor13] INFO  b.c.c.domain.service.ProductService - finding all products
+2024-10-16 08:29:37 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request PUT /product/4
+2024-10-16 08:29:37 [virtual-executor14] INFO  b.c.c.domain.service.ProductService - updating a product.
+2024-10-16 08:29:37 [virtual-executor14] INFO  b.c.c.domain.service.ProductService - product updated successfully.
+2024-10-16 08:29:37 [virtual-executor14] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 200 - PUT /product/4
+2024-10-16 08:29:41 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/findAll
+2024-10-16 08:29:41 [virtual-executor15] INFO  b.c.c.domain.service.ProductService - finding all products
+2024-10-16 08:29:53 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:29:53 [virtual-executor16] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:40:55 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-16 08:40:55 [virtual-executor17] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-16 08:41:18 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-16 08:41:18 [virtual-executor18] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-16 08:41:27 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:41:27 [virtual-executor19] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:41:41 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/100
+2024-10-16 08:41:41 [virtual-executor20] INFO  b.c.c.domain.service.ProductService - find a product by id:100
+2024-10-16 08:41:41 [virtual-executor20] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 404 - GET /product/100
+2024-10-16 08:45:46 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-16 08:45:46 [virtual-executor21] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-16 08:45:46 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-16 08:45:46 [virtual-executor22] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-16 08:45:46 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:45:46 [virtual-executor23] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:45:46 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/100
+2024-10-16 08:45:46 [virtual-executor24] INFO  b.c.c.domain.service.ProductService - find a product by id:100
+2024-10-16 08:45:46 [virtual-executor24] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 404 - GET /product/100
+2024-10-16 08:46:10 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-16 08:46:10 [virtual-executor25] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-16 08:46:10 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-16 08:46:10 [virtual-executor26] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-16 08:46:10 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:46:10 [virtual-executor27] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:46:10 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/100
+2024-10-16 08:46:10 [virtual-executor28] INFO  b.c.c.domain.service.ProductService - find a product by id:100
+2024-10-16 08:46:10 [virtual-executor28] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 404 - GET /product/100
+2024-10-16 08:47:40 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-16 08:47:40 [virtual-executor29] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-16 08:47:40 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-16 08:47:40 [virtual-executor30] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-16 08:47:40 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:47:40 [virtual-executor31] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:47:41 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/100
+2024-10-16 08:47:41 [virtual-executor32] INFO  b.c.c.domain.service.ProductService - find a product by id:100
+2024-10-16 08:47:41 [virtual-executor32] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 404 - GET /product/100
+2024-10-16 08:53:22 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-16 08:53:22 [virtual-executor33] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-16 08:53:22 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-16 08:53:22 [virtual-executor34] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-16 08:53:22 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 08:53:22 [virtual-executor35] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 08:53:23 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/100
+2024-10-16 08:53:23 [virtual-executor36] INFO  b.c.c.domain.service.ProductService - find a product by id:100
+2024-10-16 08:53:23 [virtual-executor36] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 404 - GET /product/100
+2024-10-16 09:40:51 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-16 09:40:51 [virtual-executor37] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-16 09:40:52 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-16 09:40:52 [virtual-executor38] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-16 09:40:52 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 09:40:52 [virtual-executor39] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 09:40:52 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/100
+2024-10-16 09:40:52 [virtual-executor40] INFO  b.c.c.domain.service.ProductService - find a product by id:100
+2024-10-16 09:40:52 [virtual-executor40] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 404 - GET /product/100
+2024-10-16 09:41:01 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-16 09:41:01 [virtual-executor41] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-16 09:41:01 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-16 09:41:01 [virtual-executor42] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-16 09:41:01 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 09:41:01 [virtual-executor43] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 09:41:02 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/100
+2024-10-16 09:41:02 [virtual-executor44] INFO  b.c.c.domain.service.ProductService - find a product by id:100
+2024-10-16 09:41:02 [virtual-executor44] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 404 - GET /product/100
+2024-10-16 09:41:04 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-16 09:41:04 [virtual-executor45] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-16 09:41:04 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-16 09:41:04 [virtual-executor46] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-16 09:41:04 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 09:41:04 [virtual-executor47] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 09:41:04 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/100
+2024-10-16 09:41:04 [virtual-executor48] INFO  b.c.c.domain.service.ProductService - find a product by id:100
+2024-10-16 09:41:04 [virtual-executor48] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 404 - GET /product/100
+2024-10-16 09:41:05 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-16 09:41:05 [virtual-executor49] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-16 09:41:05 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-16 09:41:05 [virtual-executor50] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-16 09:41:05 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 09:41:05 [virtual-executor51] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 09:41:05 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/100
+2024-10-16 09:41:05 [virtual-executor52] INFO  b.c.c.domain.service.ProductService - find a product by id:100
+2024-10-16 09:41:05 [virtual-executor52] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 404 - GET /product/100
+2024-10-16 09:41:06 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-16 09:41:06 [virtual-executor53] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-16 09:41:06 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-16 09:41:06 [virtual-executor54] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-16 09:41:06 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 09:41:06 [virtual-executor55] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 09:41:06 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/100
+2024-10-16 09:41:06 [virtual-executor56] INFO  b.c.c.domain.service.ProductService - find a product by id:100
+2024-10-16 09:41:06 [virtual-executor56] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 404 - GET /product/100
+2024-10-16 09:45:00 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-16 09:45:00 [virtual-executor57] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-16 09:45:01 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-16 09:45:01 [virtual-executor58] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-16 09:45:01 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-16 09:45:01 [virtual-executor59] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-16 09:45:01 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/100
+2024-10-16 09:45:01 [virtual-executor60] INFO  b.c.c.domain.service.ProductService - find a product by id:100
+2024-10-16 09:45:01 [virtual-executor60] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 404 - GET /product/100
+2024-10-28 21:42:17 [scheduled-executor-thread-4] ERROR i.m.s.DefaultTaskExceptionHandler - Error invoking scheduled task for bean [io.micronaut.testresources.client.TestResourcesKeepAlive@1984fbbc] Test resource service is not available at http://localhost:44625
+io.micronaut.testresources.client.TestResourcesException: Test resource service is not available at http://localhost:44625
+	at io.micronaut.testresources.client.DefaultTestResourcesClient.request(DefaultTestResourcesClient.java:155)
+	at io.micronaut.testresources.client.DefaultTestResourcesClient.getResolvableProperties(DefaultTestResourcesClient.java:82)
+	at io.micronaut.testresources.client.TestResourcesClient.getResolvableProperties(TestResourcesClient.java:41)
+	at io.micronaut.testresources.client.TestResourcesKeepAlive.keepAlive(TestResourcesKeepAlive.java:36)
+	at io.micronaut.testresources.client.$TestResourcesKeepAlive$Definition$Exec.dispatch(Unknown Source)
+	at io.micronaut.context.AbstractExecutableMethodsDefinition$DispatchedExecutableMethod.invoke(AbstractExecutableMethodsDefinition.java:456)
+	at io.micronaut.inject.DelegatingExecutableMethod.invoke(DelegatingExecutableMethod.java:86)
+	at io.micronaut.context.bind.DefaultExecutableBeanContextBinder$ContextBoundExecutable.invoke(DefaultExecutableBeanContextBinder.java:152)
+	at io.micronaut.scheduling.processor.ScheduledMethodProcessor.lambda$scheduleTask$2(ScheduledMethodProcessor.java:160)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:956)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+	at io.micronaut.testresources.client.DefaultTestResourcesClient.request(DefaultTestResourcesClient.java:140)
+	... 14 common frames omitted
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1065)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	... 3 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204)
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:873)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:961)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
+	... 9 common frames omitted
+2024-10-28 21:43:17 [scheduled-executor-thread-6] ERROR i.m.s.DefaultTaskExceptionHandler - Error invoking scheduled task for bean [io.micronaut.testresources.client.TestResourcesKeepAlive@1984fbbc] Test resource service is not available at http://localhost:44625
+io.micronaut.testresources.client.TestResourcesException: Test resource service is not available at http://localhost:44625
+	at io.micronaut.testresources.client.DefaultTestResourcesClient.request(DefaultTestResourcesClient.java:155)
+	at io.micronaut.testresources.client.DefaultTestResourcesClient.getResolvableProperties(DefaultTestResourcesClient.java:82)
+	at io.micronaut.testresources.client.TestResourcesClient.getResolvableProperties(TestResourcesClient.java:41)
+	at io.micronaut.testresources.client.TestResourcesKeepAlive.keepAlive(TestResourcesKeepAlive.java:36)
+	at io.micronaut.testresources.client.$TestResourcesKeepAlive$Definition$Exec.dispatch(Unknown Source)
+	at io.micronaut.context.AbstractExecutableMethodsDefinition$DispatchedExecutableMethod.invoke(AbstractExecutableMethodsDefinition.java:456)
+	at io.micronaut.inject.DelegatingExecutableMethod.invoke(DelegatingExecutableMethod.java:86)
+	at io.micronaut.context.bind.DefaultExecutableBeanContextBinder$ContextBoundExecutable.invoke(DefaultExecutableBeanContextBinder.java:152)
+	at io.micronaut.scheduling.processor.ScheduledMethodProcessor.lambda$scheduleTask$2(ScheduledMethodProcessor.java:160)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:956)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+	at io.micronaut.testresources.client.DefaultTestResourcesClient.request(DefaultTestResourcesClient.java:140)
+	... 14 common frames omitted
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1065)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	... 3 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204)
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:873)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:961)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
+	... 9 common frames omitted
+2024-10-28 21:49:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-28 21:49:52 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a84bc2a
+2024-10-28 21:49:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-28 21:49:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-10-28 21:49:54 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-28 21:49:58 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 11299ms. Server Running: http://localhost:9000
+2024-10-28 21:50:20 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-28 21:50:20 [virtual-executor1] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-28 21:50:22 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-28 21:50:22 [virtual-executor2] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-28 21:50:22 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-28 21:50:22 [virtual-executor3] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-28 21:50:22 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/100
+2024-10-28 21:50:22 [virtual-executor4] INFO  b.c.c.domain.service.ProductService - find a product by id:100
+2024-10-28 21:50:22 [virtual-executor4] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 404 - GET /product/100
+2024-10-28 22:10:42 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-28 22:10:42 [virtual-executor5] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-28 22:10:42 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-28 22:10:42 [virtual-executor6] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-28 22:10:50 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-28 22:10:50 [virtual-executor7] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-28 22:10:50 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-28 22:10:50 [virtual-executor8] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-28 22:12:48 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-28 22:12:48 [virtual-executor9] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-28 22:12:48 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-28 22:12:48 [virtual-executor10] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-28 22:12:49 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-28 22:12:49 [virtual-executor11] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-28 22:12:49 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-28 22:12:49 [virtual-executor12] INFO  b.c.c.domain.service.ProductService - find a product by id:3
