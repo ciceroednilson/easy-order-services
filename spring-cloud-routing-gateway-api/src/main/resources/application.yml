@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: route_category
+          uri: http://127.0.01:8081  # URI categories
+          predicates:
+            - Path=/gateway/category/**  # path to route
+          filters:
+            - StripPrefix=1  # Remove the prefix of URL
+        - id: route_product
+          uri: http://localhost:8082
+          predicates:
+            - Path=/gateway/product/**
