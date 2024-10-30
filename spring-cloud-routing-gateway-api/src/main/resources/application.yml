@@ -1,14 +1,72 @@
+server:
+  port: 6000
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.http: DEBUG
+
 spring:
+  application:
+    name: gateway
   cloud:
     gateway:
       routes:
-        - id: route_category
-          uri: http://127.0.01:8081  # URI categories
+        ###################### CATEGORY ######################
+        - id: route_category_all
+          uri: http://127.0.0.1:4000/  # URI categories
           predicates:
-            - Path=/gateway/category/**  # path to route
+            - Path=/gateway/category/all  # path to route
           filters:
-            - StripPrefix=1  # Remove the prefix of URL
-        - id: route_product
-          uri: http://localhost:8082
+            - SetPath=/category/all # change Path for SetPath  # http://127.0.0.1:4000/gateway/category/all
+        - id: route_category_find_and_delete
+          uri: http://127.0.0.1:4000/
           predicates:
-            - Path=/gateway/product/**
+            - Path=/gateway/category/{id}
+          filters:
+            - SetPath=/category/{id}
+        - id: route_category_create
+          uri: http://127.0.0.1:4000/
+          predicates:
+            - Path=/gateway/category
+          filters:
+            - SetPath=/category
+        ###################### PRODUCT ######################
+        - id: route_product_create
+          uri: http://127.0.0.1:9000/
+          predicates:
+            - Path=/gateway/product
+          filters:
+            - SetPath=/product
+        - id: route_product_find_by_id_and_delete_and_update
+          uri: http://127.0.0.1:9000/
+          predicates:
+            - Path=/gateway/product/{id}
+          filters:
+            - SetPath=/product/{id}
+        - id: route_product_all
+          uri: http://127.0.0.1:9000/
+          predicates:
+            - Path=/gateway/product/all
+          filters:
+            - SetPath=/product/findAll
+        ###################### ORDER ######################
+        - id: route_order_create
+          uri: http://127.0.0.1:9009/
+          predicates:
+            - Path=/gateway/order
+          filters:
+            - SetPath=/order
+        - id: route_order_find_by_id_and_delete
+          uri: http://127.0.0.1:9009/
+          predicates:
+            - Path=/gateway/order/{id}
+          filters:
+            - SetPath=/order/{id}
+        - id: route_order_all
+          uri: http://127.0.0.1:9009/
+          predicates:
+            - Path=/gateway/order/all
+          filters:
+            - SetPath=/order
