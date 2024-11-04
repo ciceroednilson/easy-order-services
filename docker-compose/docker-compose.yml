@@ -1,0 +1,82 @@
+version: "3"
+
+services:
+  kafka:
+    image: bitnami/kafka:latest
+    networks:
+      - lab-network
+    restart: on-failure
+    ports:
+      - 9092:9092
+    environment:
+      - KAFKA_CFG_BROKER_ID=1
+      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
+      - KAFKA_CFG_NUM_PARTITIONS=3
+      - ALLOW_PLAINTEXT_LISTENER=yes
+    depends_on:
+      - zookeeper
+
+  zookeeper:
+    image: bitnami/zookeeper:latest
+    networks:
+      - lab-network
+    ports:
+      - 2181:2181
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+
+  kafka-ui:
+    image: provectuslabs/kafka-ui
+    networks:
+      - lab-network
+    container_name: kafka-ui
+    depends_on:
+      - kafka
+      - zookeeper
+    ports:
+      - "8080:8080"
+    restart: always
+    environment:
+      - KAFKA_CLUSTERS_0_NAME=cluster_cicero
+      - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:9092
+      - KAFKA_CLUSTERS_0_ZOOKEEPER=zookeeper:2181
+
+  mysql:
+    image: mysql:latest
+    networks:
+      - lab-network
+    hostname: base-mysql
+    container_name: base-mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+
+  mariadb:
+    image: mariadb:latest
+    networks:
+      - lab-network
+    hostname: base-mariadb
+    container_name: bi-mariadb
+    restart: always
+    ports:
+      - "3000:3306"
+    environment:
+      - MARIADB_ROOT_PASSWORD=123456
+
+  dkron:
+    image: dkron/dkron
+    container_name: some-dkron
+    command: agent --server
+    restart: always
+    ports:
+      - "2000:8080"
+    networks:
+      - lab-network
+
+networks:
+  lab-network:
+
