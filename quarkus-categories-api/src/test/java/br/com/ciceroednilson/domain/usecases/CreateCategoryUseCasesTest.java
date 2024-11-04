@@ -1,4 +1,4 @@
-package br.com.ciceroednilson.domain.usercases;
+package br.com.ciceroednilson.domain.usecases;
 
 import br.com.ciceroednilson.domain.entities.CategoryEntity;
 import br.com.ciceroednilson.domain.repository.CategoryRepository;
@@ -15,13 +15,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.*;
 
 @QuarkusTest
-public class CreateCategoryUserCasesTest {
+public class CreateCategoryUseCasesTest {
 
     @Mock
     private CategoryRepository categoryRepository;
 
     @InjectMocks
-    private CreateCategoryUserCases createCategoryUserCases;
+    private CreateCategoryUseCases createCategoryUseCases;
 
     @BeforeEach
     public void setUp() {
@@ -32,7 +32,7 @@ public class CreateCategoryUserCasesTest {
     public void testCreate() {
         final CategoryEntity categoryEntity = new CategoryEntity();
         final LocalDateTime beforeCreate = LocalDateTime.now().minusMinutes(1);
-        createCategoryUserCases.create(categoryEntity);
+        createCategoryUseCases.create(categoryEntity);
         assertTrue(categoryEntity.getCreated().isAfter(beforeCreate), "The created date should be set to current time.");
         verify(categoryRepository, times(1)).create(categoryEntity);
     }

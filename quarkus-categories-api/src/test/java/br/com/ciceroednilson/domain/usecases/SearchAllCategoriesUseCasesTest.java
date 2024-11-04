@@ -1,4 +1,4 @@
-package br.com.ciceroednilson.domain.usercases;
+package br.com.ciceroednilson.domain.usecases;
 
 import br.com.ciceroednilson.domain.entities.CategoryEntity;
 import br.com.ciceroednilson.domain.repository.CategoryRepository;
@@ -15,13 +15,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
 @QuarkusTest
-public class SearchAllCategoriesUserCasesTest {
+public class SearchAllCategoriesUseCasesTest {
 
     @Mock
     private CategoryRepository categoryRepository;
 
     @InjectMocks
-    private SearchAllCategoriesUserCases searchAllCategoriesUserCases;
+    private SearchAllCategoriesUseCases searchAllCategoriesUseCases;
 
     @BeforeEach
     public void setUp() {
@@ -34,7 +34,7 @@ public class SearchAllCategoriesUserCasesTest {
         entity.setIdCategory(1L);
         final List<CategoryEntity> expectedCategories = List.of(entity);
         when(categoryRepository.searchAll()).thenReturn(expectedCategories);
-        final List<CategoryEntity> resultCategories = searchAllCategoriesUserCases.searchAll();
+        final List<CategoryEntity> resultCategories = searchAllCategoriesUseCases.searchAll();
         assertEquals(expectedCategories, resultCategories, "The returned category list should match the expected list.");
         verify(categoryRepository, times(1)).searchAll();
     }

@@ -1,4 +1,4 @@
-package br.com.ciceroednilson.domain.usercases;
+package br.com.ciceroednilson.domain.usecases;
 
 import br.com.ciceroednilson.domain.repository.CategoryRepository;
 import jakarta.inject.Inject;
@@ -6,13 +6,13 @@ import jakarta.inject.Singleton;
 import org.jboss.logging.Logger;
 
 @Singleton
-public class DeleteCategoryUserCases {
+public class DeleteCategoryUseCases {
 
-    private static final Logger LOG = Logger.getLogger(DeleteCategoryUserCases.class);
+    private static final Logger LOG = Logger.getLogger(DeleteCategoryUseCases.class);
     private final CategoryRepository categoryRepository;
 
     @Inject
-    public DeleteCategoryUserCases(final CategoryRepository categoryRepository) {
+    public DeleteCategoryUseCases(final CategoryRepository categoryRepository) {
         this.categoryRepository = categoryRepository;
     }
 

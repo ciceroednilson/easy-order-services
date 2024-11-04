@@ -1,4 +1,4 @@
-package br.com.ciceroednilson.domain.usercases;
+package br.com.ciceroednilson.domain.usecases;
 
 import br.com.ciceroednilson.domain.entities.CategoryEntity;
 import br.com.ciceroednilson.domain.repository.CategoryRepository;
@@ -13,13 +13,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
 @QuarkusTest
-public class FindCategoryUserCasesTest {
+public class FindCategoryUseCasesTest {
 
     @Mock
     private CategoryRepository categoryRepository;
 
     @InjectMocks
-    private FindCategoryUserCases findCategoryUserCases;
+    private FindCategoryUseCases findCategoryUserCases;
 
     @BeforeEach
     public void setUp() {

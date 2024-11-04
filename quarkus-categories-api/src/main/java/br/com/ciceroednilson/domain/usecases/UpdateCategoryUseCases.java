@@ -1,20 +1,19 @@
-package br.com.ciceroednilson.domain.usercases;
+package br.com.ciceroednilson.domain.usecases;
 
 import br.com.ciceroednilson.domain.entities.CategoryEntity;
 import br.com.ciceroednilson.domain.repository.CategoryRepository;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import org.jboss.logging.Logger;
-import org.slf4j.LoggerFactory;
 
 @Singleton
-public class UpdateCategoryUserCases {
+public class UpdateCategoryUseCases {
 
-    private static final Logger LOG = Logger.getLogger(UpdateCategoryUserCases.class);
+    private static final Logger LOG = Logger.getLogger(UpdateCategoryUseCases.class);
     private final CategoryRepository categoryRepository;
 
     @Inject
-    public UpdateCategoryUserCases(final CategoryRepository categoryRepository) {
+    public UpdateCategoryUseCases(final CategoryRepository categoryRepository) {
         this.categoryRepository = categoryRepository;
     }
 

@@ -1,4 +1,4 @@
-package br.com.ciceroednilson.domain.usercases;
+package br.com.ciceroednilson.domain.usecases;
 
 import br.com.ciceroednilson.domain.entities.CategoryEntity;
 import br.com.ciceroednilson.domain.repository.CategoryRepository;
@@ -8,13 +8,13 @@ import java.time.LocalDateTime;
 import org.jboss.logging.Logger;
 
 @Singleton
-public class CreateCategoryUserCases {
+public class CreateCategoryUseCases {
 
-    private static final Logger LOG = Logger.getLogger(CreateCategoryUserCases.class);
+    private static final Logger LOG = Logger.getLogger(CreateCategoryUseCases.class);
     private final CategoryRepository categoryRepository;
 
     @Inject
-    public CreateCategoryUserCases(final CategoryRepository categoryRepository) {
+    public CreateCategoryUseCases(final CategoryRepository categoryRepository) {
         this.categoryRepository = categoryRepository;
     }
 

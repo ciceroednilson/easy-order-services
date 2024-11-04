@@ -1,4 +1,4 @@
-package br.com.ciceroednilson.domain.usercases;
+package br.com.ciceroednilson.domain.usecases;
 
 import br.com.ciceroednilson.domain.repository.CategoryRepository;
 import io.quarkus.test.junit.QuarkusTest;
@@ -12,13 +12,13 @@ import org.jboss.logging.Logger;
 import static org.mockito.Mockito.*;
 
 @QuarkusTest
-public class DeleteCategoryUserCasesTest {
+public class DeleteCategoryUseCasesTest {
 
     @Mock
     private CategoryRepository categoryRepository;
 
     @InjectMocks
-    private DeleteCategoryUserCases deleteCategoryUserCases;
+    private DeleteCategoryUseCases deleteCategoryUserCases;
 
     @Mock
     private Logger logger;

@@ -1,4 +1,4 @@
-package br.com.ciceroednilson.domain.usercases;
+package br.com.ciceroednilson.domain.usecases;
 
 import br.com.ciceroednilson.domain.entities.CategoryEntity;
 import br.com.ciceroednilson.domain.repository.CategoryRepository;
@@ -9,13 +9,13 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import static org.mockito.Mockito.*;
 
-public class UpdateCategoryUserCasesTest {
+public class UpdateCategoryUseCasesTest {
 
     @Mock
     private CategoryRepository categoryRepository;
 
     @InjectMocks
-    private UpdateCategoryUserCases updateCategoryUserCases;
+    private UpdateCategoryUseCases updateCategoryUserCases;
 
     @BeforeEach
     public void setUp() {

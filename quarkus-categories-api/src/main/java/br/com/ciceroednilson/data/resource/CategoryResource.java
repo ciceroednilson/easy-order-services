@@ -3,11 +3,12 @@ package br.com.ciceroednilson.data.resource;
 import br.com.ciceroednilson.data.model.CategoryRequestModel;
 import br.com.ciceroednilson.data.model.CategoryResponseModel;
 import br.com.ciceroednilson.domain.entities.CategoryEntity;
-import br.com.ciceroednilson.domain.usercases.CreateCategoryUserCases;
-import br.com.ciceroednilson.domain.usercases.DeleteCategoryUserCases;
-import br.com.ciceroednilson.domain.usercases.FindCategoryUserCases;
-import br.com.ciceroednilson.domain.usercases.SearchAllCategoriesUserCases;
-import br.com.ciceroednilson.domain.usercases.UpdateCategoryUserCases;
+import br.com.ciceroednilson.domain.usecases.CreateCategoryUseCases;
+
+import br.com.ciceroednilson.domain.usecases.DeleteCategoryUseCases;
+import br.com.ciceroednilson.domain.usecases.FindCategoryUseCases;
+import br.com.ciceroednilson.domain.usecases.SearchAllCategoriesUseCases;
+import br.com.ciceroednilson.domain.usecases.UpdateCategoryUseCases;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
@@ -19,29 +20,29 @@ import java.util.List;
 @Consumes(MediaType.APPLICATION_JSON)
 public class CategoryResource {
 
-    private final CreateCategoryUserCases createCategoryUserCases;
-    private final UpdateCategoryUserCases updateCategoryUserCases;
-    private final DeleteCategoryUserCases deleteCategoryUserCases;
-    private final FindCategoryUserCases findCategoryUserCases;
-    private final SearchAllCategoriesUserCases searchAllCategoriesUserCases;
+    private final CreateCategoryUseCases createCategoryUseCases;
+    private final UpdateCategoryUseCases updateCategoryUserCases;
+    private final DeleteCategoryUseCases deleteCategoryUserCases;
+    private final FindCategoryUseCases findCategoryUserCases;
+    private final SearchAllCategoriesUseCases searchAllCategoriesUseCases;
 
     @Inject
     public CategoryResource(
-            final CreateCategoryUserCases createCategoryUserCases,
-            final UpdateCategoryUserCases updateCategoryUserCases,
-            final DeleteCategoryUserCases deleteCategoryUserCases,
-            final FindCategoryUserCases findCategoryUserCases,
-            final SearchAllCategoriesUserCases searchAllCategoriesUserCases) {
-        this.createCategoryUserCases = createCategoryUserCases;
+            final CreateCategoryUseCases createCategoryUseCases,
+            final UpdateCategoryUseCases updateCategoryUserCases,
+            final DeleteCategoryUseCases deleteCategoryUserCases,
+            final FindCategoryUseCases findCategoryUserCases,
+            final SearchAllCategoriesUseCases searchAllCategoriesUseCases) {
+        this.createCategoryUseCases = createCategoryUseCases;
         this.updateCategoryUserCases = updateCategoryUserCases;
         this.deleteCategoryUserCases = deleteCategoryUserCases;
         this.findCategoryUserCases = findCategoryUserCases;
-        this.searchAllCategoriesUserCases = searchAllCategoriesUserCases;
+        this.searchAllCategoriesUseCases = searchAllCategoriesUseCases;
     }
 
     @POST
     public Response create(CategoryRequestModel model) {
-        this.createCategoryUserCases.create(model.toEntity());
+        this.createCategoryUseCases.create(model.toEntity());
         return Response.ok().build();
     }
 
@@ -69,7 +70,7 @@ public class CategoryResource {
     @GET
     @Path("/all")
     public List<CategoryResponseModel> finAll() {
-        final List<CategoryEntity> list = this.searchAllCategoriesUserCases.searchAll();
+        final List<CategoryEntity> list = this.searchAllCategoriesUseCases.searchAll();
         return CategoryEntity.toListModel(list);
     }
 }
