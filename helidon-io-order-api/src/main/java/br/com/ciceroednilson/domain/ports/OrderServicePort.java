@@ -5,5 +5,5 @@ import javassist.NotFoundException;
 
 public interface OrderServicePort {
 
-    String create(final OrderModel model) throws NotFoundException;
+    String create(final OrderModel model) throws Exception;
 }

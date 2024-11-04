@@ -2627,3 +2627,212 @@ java.lang.Exception: Category not found!
 2024-10-29 22:15:42 [virtual-executor7] INFO  b.c.c.domain.service.ProductService - find a product by id:2
 2024-10-29 22:15:42 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
 2024-10-29 22:15:42 [virtual-executor8] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-29 22:22:59 [Thread-0] INFO  io.micronaut.runtime.Micronaut - Embedded Application shutting down
+2024-10-29 22:23:00 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-29 22:23:00 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-30 20:30:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-30 20:30:00 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fa3be26
+2024-10-30 20:30:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-30 20:30:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-10-30 20:30:02 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-30 20:30:04 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 7013ms. Server Running: http://localhost:9000
+2024-10-30 20:30:42 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:30:43 [virtual-executor1] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:30:44 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:30:44 [virtual-executor2] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:30:44 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:30:44 [virtual-executor3] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:30:45 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:30:45 [virtual-executor4] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:34:25 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:34:25 [virtual-executor5] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:34:25 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:34:25 [virtual-executor6] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:34:26 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:34:26 [virtual-executor7] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:34:26 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:34:26 [virtual-executor8] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:36:37 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:36:37 [virtual-executor9] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:36:37 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:36:37 [virtual-executor10] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:36:38 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:36:38 [virtual-executor11] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:36:38 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:36:38 [virtual-executor12] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:45:41 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:45:41 [virtual-executor13] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:45:42 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:45:42 [virtual-executor14] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:45:42 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:45:42 [virtual-executor15] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:45:42 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:45:42 [virtual-executor16] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:46:25 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:46:25 [virtual-executor17] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:46:25 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:46:25 [virtual-executor18] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:46:25 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:46:25 [virtual-executor19] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:46:26 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:46:26 [virtual-executor20] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:48:32 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:48:32 [virtual-executor21] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:48:33 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:48:33 [virtual-executor22] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:48:33 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:48:33 [virtual-executor23] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:48:33 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:48:33 [virtual-executor24] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:49:32 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:49:32 [virtual-executor25] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:49:32 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:49:32 [virtual-executor26] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:49:33 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:49:33 [virtual-executor27] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:49:33 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:49:33 [virtual-executor28] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:49:53 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:49:53 [virtual-executor29] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:49:53 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:49:53 [virtual-executor30] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:49:54 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:49:54 [virtual-executor31] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:49:54 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:49:54 [virtual-executor32] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:51:32 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:51:32 [virtual-executor33] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:51:32 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:51:32 [virtual-executor34] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:51:33 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:51:33 [virtual-executor35] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:51:33 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:51:33 [virtual-executor36] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:56:12 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:56:12 [virtual-executor37] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:56:13 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:56:13 [virtual-executor38] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 20:56:13 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 20:56:13 [virtual-executor39] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 20:56:13 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 20:56:13 [virtual-executor40] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:01:11 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:01:11 [virtual-executor41] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:01:11 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:01:11 [virtual-executor42] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:01:11 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:01:11 [virtual-executor43] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:01:12 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:01:12 [virtual-executor44] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:06:17 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:06:17 [virtual-executor45] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:06:18 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:06:18 [virtual-executor46] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:06:18 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:06:18 [virtual-executor47] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:06:18 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:06:18 [virtual-executor48] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:10:24 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:10:24 [virtual-executor49] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:10:24 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:10:24 [virtual-executor50] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:10:24 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:10:24 [virtual-executor51] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:10:25 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:10:25 [virtual-executor52] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:13:42 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:13:42 [virtual-executor53] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:13:42 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:13:42 [virtual-executor54] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:13:42 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:13:42 [virtual-executor55] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:13:43 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:13:43 [virtual-executor56] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:15:15 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:15:15 [virtual-executor57] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:15:15 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:15:15 [virtual-executor58] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:15:15 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:15:15 [virtual-executor59] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:15:16 [default-nioEventLoopGroup-1-8] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:15:16 [virtual-executor60] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:18:31 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:18:31 [virtual-executor61] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:18:31 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:18:31 [virtual-executor62] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:18:31 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:18:31 [virtual-executor63] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:18:32 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:18:32 [virtual-executor64] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:18:51 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:18:51 [virtual-executor65] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:18:52 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:18:52 [virtual-executor66] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:18:52 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:18:52 [virtual-executor67] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:18:52 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:18:52 [virtual-executor68] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:23:06 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:23:06 [virtual-executor69] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:23:06 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:23:06 [virtual-executor70] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:23:06 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:23:06 [virtual-executor71] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:23:06 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:23:06 [virtual-executor72] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:27:49 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:27:49 [virtual-executor73] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:27:49 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:27:49 [virtual-executor74] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:27:49 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:27:49 [virtual-executor75] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:27:50 [default-nioEventLoopGroup-1-4] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:27:50 [virtual-executor76] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:28:19 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:28:19 [virtual-executor77] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:28:19 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:28:19 [virtual-executor78] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:28:20 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:28:20 [virtual-executor79] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:28:20 [default-nioEventLoopGroup-1-5] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:28:20 [virtual-executor80] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:28:33 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:28:33 [virtual-executor81] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:28:34 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:28:34 [virtual-executor82] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:28:34 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:28:34 [virtual-executor83] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:28:34 [default-nioEventLoopGroup-1-6] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:28:34 [virtual-executor84] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:28:40 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:28:40 [virtual-executor85] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:28:40 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:28:40 [virtual-executor86] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:28:40 [default-nioEventLoopGroup-1-7] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/7
+2024-10-30 21:28:40 [virtual-executor87] INFO  b.c.c.domain.service.ProductService - find a product by id:7
+2024-10-30 21:28:41 [virtual-executor87] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Response 404 - GET /product/7
+2024-10-30 21:28:51 [default-nioEventLoopGroup-1-9] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/findAll
+2024-10-30 21:28:51 [virtual-executor88] INFO  b.c.c.domain.service.ProductService - finding all products
+2024-10-30 21:29:08 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:29:08 [virtual-executor89] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:29:08 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:29:08 [virtual-executor90] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:29:08 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/4
+2024-10-30 21:29:08 [virtual-executor91] INFO  b.c.c.domain.service.ProductService - find a product by id:4
+2024-10-30 21:29:08 [default-nioEventLoopGroup-1-2] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/5
+2024-10-30 21:29:08 [virtual-executor92] INFO  b.c.c.domain.service.ProductService - find a product by id:5
+2024-10-30 21:29:17 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:29:17 [virtual-executor93] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:29:18 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:29:18 [virtual-executor94] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:29:18 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/5
+2024-10-30 21:29:18 [virtual-executor95] INFO  b.c.c.domain.service.ProductService - find a product by id:5
+2024-10-30 21:29:18 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/2
+2024-10-30 21:29:18 [virtual-executor96] INFO  b.c.c.domain.service.ProductService - find a product by id:2
+2024-10-30 21:29:18 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/3
+2024-10-30 21:29:18 [virtual-executor97] INFO  b.c.c.domain.service.ProductService - find a product by id:3
+2024-10-30 21:29:18 [default-nioEventLoopGroup-1-3] DEBUG i.m.h.s.netty.NettyRequestLifecycle - Request GET /product/5
+2024-10-30 21:29:18 [virtual-executor98] INFO  b.c.c.domain.service.ProductService - find a product by id:5
+2024-10-31 19:09:34 [Thread-0] INFO  io.micronaut.runtime.Micronaut - Embedded Application shutting down
+2024-10-31 19:09:35 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-31 19:09:36 [Thread-0] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

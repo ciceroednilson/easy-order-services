@@ -5,6 +5,9 @@ docker network create lab-network
 
 docker run  -p 3306:3306 --network=lab-network --hostname base-mysql --name base-mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:latest
 
+docker run -p 3000:3306  --network=lab-network --hostname base-mariadb --name bi-mariadb --env MARIADB_ROOT_PASSWORD=123456  mariadb:latest
+
+
 
 graylog  
  user: admin
@@ -59,3 +62,24 @@ http://localhost:8080/swagger-ui
 
 
 http://localhost:8080/swagger
+
+
+https://hub.docker.com/r/dkron/dkron
+
+docker run -d \
+  --name some-dkron \
+  --network lab-network \
+  -p 2000:8080 \
+  dkron/dkron agent --server
+
+
+
+java.net.UnknownHostException: kafka
+127.0.0.1 kafka
+
+
+Inicialize um módulo Go: Execute o seguinte comando para criar um novo módulo Go. Substitua nome-do-modulo pelo nome desejado, que geralmente é um URL de repositório.
+
+go mod init golang-products-consumer
+
+

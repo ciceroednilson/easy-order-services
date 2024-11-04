@@ -12,6 +12,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import javassist.NotFoundException;
 
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -34,22 +35,28 @@ public class OrderService implements OrderServicePort {
     }
 
     @Override
-    public String create(final OrderModel model) throws NotFoundException {
+    public String create(final OrderModel model) throws Exception {
         final List<String> errors = validateProduct(model.getProducts());
         if (!errors.isEmpty()) {
             throw new NotFoundException(String.join(", ", errors));
         }
-        this.save(model);
+        final long idOrder = this.save(model);
+        try {
+            this.productServicePort.reduceStock(idOrder, model.getProducts());
+        } catch (final IOException ex) {
+            throw new IOException("Error to send a message to broker:" + ex.getMessage());
+        }
         return "The order created successfully";
     }
 
-    private void save(final OrderModel model) {
+    private long save(final OrderModel model) {
         final OrderEntity entity = buildOrderEntity(model);
         this.orderRepositoryPort.persist(entity);
         model.getProducts().forEach(product -> {
             final OrderXProductEntity orderXProduct = buildOrderXProductEntity(entity, product);
             this.orderProductRepositoryPort.persist(orderXProduct);
         });
+        return entity.getId();
     }
 
     private OrderXProductEntity buildOrderXProductEntity(final OrderEntity entity, final long product) {
@@ -76,7 +83,7 @@ public class OrderService implements OrderServicePort {
     }
 
     private ProductModel findProduct(final Long id) {
-        return  productServicePort.findById(id);
+        return productServicePort.findById(id);
     }
 
     private List<String> validateProduct(final List<Long> products) {
