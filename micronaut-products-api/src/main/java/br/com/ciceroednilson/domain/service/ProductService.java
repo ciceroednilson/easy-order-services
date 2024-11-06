@@ -12,6 +12,8 @@ import jakarta.inject.Singleton;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.math.BigInteger;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -72,5 +74,15 @@ public class ProductService implements ProductServiceProvider {
         LOG.info("finding all products");
         final List<ProductEntity> list = this.productPersistence.findAll();
         return ProductMapper.toListModel(list);
+    }
+
+    @Override
+    public void reduceStock(final Long id) {
+        LOG.info("reducing the stock of product:{}", id);
+        final ProductModel model = this.findById(id);
+        model.setTotal(model.getTotal() - BigInteger.ONE.intValue());
+        model.setUpdated(LocalDateTime.now());
+        this.update(model);
+        LOG.info("reducing the stock of product:{} successfully", id);
     }
 }

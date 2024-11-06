@@ -71,4 +71,11 @@ public class ProductController {
         List<ProductModel> products = productServiceProvider.findAll();
         return HttpResponse.ok(ProductMapper.toListResponse(products));
     }
+
+    @Put("/{id}/reduce/stock/")
+    @Produces(MediaType.APPLICATION_JSON)
+    public HttpResponse<Void> reduceStock(@PathVariable Long id) {
+        this.productServiceProvider.reduceStock(id);
+        return HttpResponse.ok();
+    }
 }

@@ -11,4 +11,5 @@ public interface ProductServiceProvider {
     void delete(Long id);
     ProductModel findById(Long id);
     List<ProductModel> findAll();
+    void reduceStock(Long id);
 }
