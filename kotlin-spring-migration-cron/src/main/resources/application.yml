@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: kotlin-spring-migration-cron
+server:
+  port: 2121

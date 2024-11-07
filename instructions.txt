@@ -83,3 +83,6 @@ Inicialize um módulo Go: Execute o seguinte comando para criar um novo módulo 
 go mod init golang-products-consumer
 
 
+export GOPROXY=https://proxy.golang.org
+
+

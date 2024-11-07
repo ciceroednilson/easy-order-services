@@ -1,0 +1,17 @@
+insertOrder: INSERT INTO tb_order_bi 
+             (id_order, 
+              id_product, 
+              ds_product, 
+              vl_product, 
+              id_category, 
+              ds_category, 
+              dt_created, 
+              dt_migrated)
+             VALUES (?, 
+                     ?, 
+                     ?, 
+                     ?, 
+                     ?, 
+                     ?, 
+                     ?, 
+                     ?)

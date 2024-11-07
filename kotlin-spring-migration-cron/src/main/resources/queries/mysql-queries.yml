@@ -1,0 +1,15 @@
+findAllOrders: SELECT toxp.id_order   AS idOrder,
+                      tp.id_product   AS codeProduct,
+                      tp.ds_product   AS descProduct,
+                      tp.vl_product   AS valueProduct,
+                      tp.id_category  AS codeCategory,
+                      tc.ds_category  AS descCategory,
+                      toxp.dt_created AS dateCreated,
+                      fl_migrated     AS flagMigrated
+                 FROM tb_order_x_product toxp
+           INNER JOIN tb_product tp ON toxp.id_product = tp.id_product
+           INNER JOIN tb_category tc ON tc.id_category  = tp.id_category
+                WHERE fl_migrated = 0
+                LIMIT 5
+
+updateOrderXProduct: UPDATE tb_order_x_product SET fl_migrated = 1 WHERE id_product = ? AND id_order = ?
