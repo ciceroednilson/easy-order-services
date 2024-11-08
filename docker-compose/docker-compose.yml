@@ -67,16 +67,6 @@ services:
     environment:
       - MARIADB_ROOT_PASSWORD=123456
 
-  dkron:
-    image: dkron/dkron
-    container_name: some-dkron
-    command: agent --server
-    restart: always
-    ports:
-      - "2000:8080"
-    networks:
-      - lab-network
-
 networks:
   lab-network:
 
