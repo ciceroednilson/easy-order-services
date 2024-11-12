@@ -294,3 +294,18 @@ curl --location 'http://localhost:9009/order' \
   "products": [6,8]
 }'
 ~~~~
+
+## ⚙️ Golang.
+
+Below, you can check the source.
+
+#### 🚀 [golang-products-consumer](golang-products-consumer)
+
+## ⚙️ Golang - Architecture.
+
+![readme-files/images/golang-architecture.drawio.png](readme-files/images/golang-architecture.drawio.png)
+
+## ⚙️ Golang - Project structure.
+
+![readme-files/images/golang-structure.png](readme-files/images/golang-structure.png)
+
