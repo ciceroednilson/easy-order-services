@@ -267,3 +267,30 @@ Reduce the inventory of the product.
 curl --location --request PUT 'http://localhost:9000/product/4/reduce/stock' \
 --data ''
 ~~~~
+
+## ⚙️ Helidon MP.
+
+Below, you can check the source.
+
+#### 🚀 [helidon-io-order-api](helidon-io-order-api)
+
+## ⚙️ Helidon MP - Architecture.
+
+![readme-files/images/helidon-mp-architecture.drawio.png](readme-files/images/helidon-mp-architecture.drawio.png)
+
+## ⚙️ Helidon MP - Project structure.
+
+![readme-files/images/helidon-mp-structure.png](readme-files/images/helidon-mp-structure.png)
+
+## ⚙️ Helidon MP - cURL example for testing.
+
+#### 🚀 Collection: [helidon-io-order.postman_collection.json](helidon-io-order.postman_collection.json)
+
+Create an order.
+~~~~shel
+curl --location 'http://localhost:9009/order' \
+--header 'Content-Type: application/json' \
+--data '{
+  "products": [6,8]
+}'
+~~~~
