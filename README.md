@@ -200,3 +200,70 @@ curl --location --request DELETE 'http://localhost:4000/category/1'
 ~~~~
 
 ## ⚙️ Micronaut.
+
+Below, you can check the source.
+
+#### 🚀 [micronaut-products-api](micronaut-products-api)
+
+## ⚙️ Micronaut - Architecture.
+
+![readme-files/images/micronaut-architecture.drawio.png](readme-files/images/micronaut-architecture.drawio.png)
+
+## ⚙️ Micronaut - Project structure.
+
+![readme-files/images/micronault-structure.png](readme-files/images/micronault-structure.png)
+
+## ⚙️ Micronaut - cURL examples for testing.
+
+#### 🚀 Collection: [micronaut-product.postman_collection.json](postman-collections/micronaut-product.postman_collection.json)
+
+Find all products.
+~~~~shel
+curl --location 'http://localhost:9000/product/findAll'
+~~~~
+
+Find the product by its ID
+~~~~shel
+curl --location 'http://localhost:9000/product/4'
+~~~~
+
+Create a new product.
+~~~~shel
+curl --location 'http://localhost:9000/product' \
+--header 'Content-Type: application/json' \
+--data '{    
+    "product": "Jogo do Mario Deluxe",
+    "idCategory": 2,
+    "price": 99.99,
+    "total": 200,
+    "created": "2024-08-27T15:00:00",
+    "updated": "2024-08-27T15:30:00",
+    "active": true
+}'
+~~~~
+
+Update the product.
+~~~~shel
+curl --location --request PUT 'http://localhost:9000/product/4' \
+--header 'Content-Type: application/json' \
+--data '{    
+    "product": "Jogo do Sonic 4",
+    "idCategory": 2,
+    "price": 99.99,
+    "total": 200,
+    "created": "2024-08-27T15:00:00",
+    "updated": "2024-08-27T15:30:00",
+    "active": false
+}'
+~~~~
+
+Delete the product.
+~~~~shel
+curl --location --request DELETE 'http://localhost:9000/product/1'
+~~~~
+
+Reduce the inventory of the product.
+~~~~shel
+curl --location --request PUT 'http://localhost:9000/product/4/reduce/stock' \
+--data ''
+~~~~
