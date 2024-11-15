@@ -33,7 +33,6 @@ This lab has the objective of testing different frameworks and tools, such as He
 
 ![readme-files/images/architecture_general.drawio.png](readme-files/images/architecture_general.drawio.png)
 
-
 ## ⚙️ Docker Compose.
 
 Execute the "docker-compose" command in the [docker-compose](docker-compose) folder to create your containers.
@@ -41,7 +40,6 @@ Execute the "docker-compose" command in the [docker-compose](docker-compose) fol
 ~~~~shell
 sudo docker-compose up -d --build
 ~~~~
-
 
 ## ⚙️ MySQL.
 
