@@ -301,6 +301,18 @@ Below, you can check the source.
 
 #### 🚀 [golang-products-consumer](golang-products-consumer)
 
+>[!TIP]
+>
+>If you need to create a new project, you'll need to initialize a new Go module with the command below. 
+>~~~~shel
+>go mod init golang-products-consumer
+>~~~~
+>
+>The GOPROXY environment variable must be added to the OS to fetch packages and dependencies.
+>~~~~shel
+>export GOPROXY=https://proxy.golang.org
+>~~~~
+
 ## ⚙️ Golang - Architecture.
 
 ![readme-files/images/golang-architecture.drawio.png](readme-files/images/golang-architecture.drawio.png)
