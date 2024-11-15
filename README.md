@@ -1,6 +1,8 @@
 # The lab is for learning some frameworks and tools.
 
-![readme-files/images/banner.png](readme-files/images/banner.png)
+<p align="center">
+  <img src="readme-files/images/banner.png" alt="Tech">
+</p>
 
 ## ⚙️ Introduction.
 
