@@ -309,3 +309,136 @@ Below, you can check the source.
 
 ![readme-files/images/golang-structure.png](readme-files/images/golang-structure.png)
 
+## ⚙️ Golang - Consumers receive this message from the Kafka broker.
+
+After the broker receives a message, this service calls the [micronaut-products-api](micronaut-products-api) service to reduce the products from stock.
+
+![readme-files/images/message_kafka.png](readme-files/images/message_kafka.png)
+
+## ⚙️ Kotlin/Spring.
+
+Below, you can check the source.
+
+#### 🚀 [kotlin-spring-migration-cron](kotlin-spring-migration-cron)
+
+## ⚙️ Kotlin/Spring - Architecture.
+
+![readme-files/images/cron-architecture.drawio.png](readme-files/images/cron-architecture.drawio.png)
+
+## ⚙️ Kotlin/Spring - Project structure.
+
+![readme-files/images/kotlin-structure.png](readme-files/images/kotlin-structure.png)
+
+## ⚙️ Kotlin/Spring - Migration Data.
+
+After the data migration, we check it in MariaDB, as shown below.
+
+![readme-files/images/maria_db_data.png](readme-files/images/maria_db_data.png)
+
+
+## ⚙️ Spring Gateway.
+
+Below, you can check the source.
+
+#### 🚀 [spring-cloud-routing-gateway-api](spring-cloud-routing-gateway-api)
+
+## ⚙️ Spring Gateway - Project structure.
+
+![readme-files/images/routing-gateway.png](readme-files/images/routing-gateway.png)
+
+## ⚙️ Spring Gateway - Routes.
+
+Below is the configuration of the routes between the gateway and other services.
+
+![readme-files/images/configs-gateway.png](readme-files/images/configs-gateway.png)
+
+
+
+## ⚙️ Spring Gateway - cURL examples for testing.
+
+#### 🚀 Collection: [spring-cloud-routing-gateway-api.postman_collection.json](postman-collections/spring-cloud-routing-gateway-api.postman_collection.json)
+
+
+Find all categories.
+~~~~shel
+curl --location 'http://127.0.0.1:6000/gateway/category/all'
+~~~~
+
+Find the category by id.
+~~~~shel
+curl --location 'http://127.0.0.1:6000/gateway/category/3'
+~~~~
+
+Create the new category.
+~~~~shel
+curl --location 'http://127.0.0.1:6000/gateway/category' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "Ebook 2",
+    "active": true
+}'
+~~~~
+
+Delete a category.
+~~~~shel
+curl --location --request DELETE 'http://127.0.0.1:6000/gateway/category/8' \
+--data ''
+~~~~
+
+Create the new product.
+~~~~shel
+curl --location 'http://localhost:6000/gateway/product' \
+--header 'Content-Type: application/json' \
+--data '{    
+    "product": "Ouro Branco",
+    "idCategory": 5,
+    "price": 99.99,
+    "total": 200,
+    "created": "2024-08-27T15:00:00",
+    "updated": "2024-08-27T15:30:00",
+    "active": true
+}'
+~~~~
+
+Update the product.
+~~~~shel
+curl --location --request PUT 'http://localhost:6000/gateway/product/4' \
+--header 'Content-Type: application/json' \
+--data '{    
+    "product": "Jogo do Sonic 4",
+    "idCategory": 2,
+    "price": 99.99,
+    "total": 200,
+    "created": "2024-08-27T15:00:00",
+    "updated": "2024-08-27T15:30:00",
+    "active": false
+}'
+~~~~
+
+Find all products.
+~~~~shel
+curl --location 'http://localhost:6000/gateway/product/findAll'
+~~~~
+
+Delete a product.
+~~~~shel
+curl --location --request DELETE 'http://localhost:6000/gateway/product/7'
+~~~~
+
+Create the new order.
+~~~~shel
+curl --location 'http://localhost:6000/gateway/order' \
+--header 'Content-Type: application/json' \
+--data '{
+  "products": [2,3]
+}'
+~~~~
+
+
+## 📌 Version.
+
+1.0
+
+## ✒️ Author.
+
+Cícero Ednilson - ciceroednilson@gmail.com
