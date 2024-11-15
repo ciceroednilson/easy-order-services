@@ -148,6 +148,8 @@ To check if Kafka is running correctly, you can access the address [http://local
 
 ## ⚙️ Quarkus.
 
+This service has the objective of creating, updating, selecting, and deleting categories.
+
 Below, you can check the source.
 
 #### 🚀 [quarkus-categories-api](quarkus-categories-api)
@@ -202,6 +204,8 @@ curl --location --request DELETE 'http://localhost:4000/category/1'
 ~~~~
 
 ## ⚙️ Micronaut.
+
+This service has the objective of creating, updating, selecting, and deleting products.
 
 Below, you can check the source.
 
@@ -272,6 +276,8 @@ curl --location --request PUT 'http://localhost:9000/product/4/reduce/stock' \
 
 ## ⚙️ Helidon MP.
 
+The objective of this service is to create an order.
+
 Below, you can check the source.
 
 #### 🚀 [helidon-io-order-api](helidon-io-order-api)
@@ -298,6 +304,8 @@ curl --location 'http://localhost:9009/order' \
 ~~~~
 
 ## ⚙️ Golang.
+
+The objective of this service is to consume the same messages from Kafka and call the product service to reduce the stock..
 
 Below, you can check the source.
 
@@ -331,6 +339,8 @@ After the broker receives a message, this service calls the [micronaut-products-
 
 ## ⚙️ Kotlin/Spring.
 
+The objective of this service is to migrate data from MySQL, which is the system database, to MariaDB, which is the database for BI.
+
 Below, you can check the source.
 
 #### 🚀 [kotlin-spring-migration-cron](kotlin-spring-migration-cron)
@@ -351,6 +361,8 @@ After the data migration, we check it in MariaDB, as shown below.
 
 
 ## ⚙️ Spring Gateway.
+
+The objective of this service is to create a gateway to other services.
 
 Below, you can check the source.
 
