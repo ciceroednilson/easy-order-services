@@ -21,22 +21,22 @@ import java.util.List;
 public class CategoryResource {
 
     private final CreateCategoryUseCases createCategoryUseCases;
-    private final UpdateCategoryUseCases updateCategoryUserCases;
-    private final DeleteCategoryUseCases deleteCategoryUserCases;
-    private final FindCategoryUseCases findCategoryUserCases;
+    private final UpdateCategoryUseCases updateCategoryUseCases;
+    private final DeleteCategoryUseCases deleteCategoryUseCases;
+    private final FindCategoryUseCases findCategoryUseases;
     private final SearchAllCategoriesUseCases searchAllCategoriesUseCases;
 
     @Inject
     public CategoryResource(
             final CreateCategoryUseCases createCategoryUseCases,
-            final UpdateCategoryUseCases updateCategoryUserCases,
-            final DeleteCategoryUseCases deleteCategoryUserCases,
-            final FindCategoryUseCases findCategoryUserCases,
+            final UpdateCategoryUseCases updateCategoryUseCases,
+            final DeleteCategoryUseCases deleteCategoryUseCases,
+            final FindCategoryUseCases findCategoryUseCases,
             final SearchAllCategoriesUseCases searchAllCategoriesUseCases) {
         this.createCategoryUseCases = createCategoryUseCases;
-        this.updateCategoryUserCases = updateCategoryUserCases;
-        this.deleteCategoryUserCases = deleteCategoryUserCases;
-        this.findCategoryUserCases = findCategoryUserCases;
+        this.updateCategoryUseCases = updateCategoryUseCases;
+        this.deleteCategoryUseCases = deleteCategoryUseCases;
+        this.findCategoryUseCases = findCategoryUseCases;
         this.searchAllCategoriesUseCases = searchAllCategoriesUseCases;
     }
 
@@ -50,21 +50,21 @@ public class CategoryResource {
     @Path("/{id}")
     public Response update(final @PathParam("id") Long id, final CategoryRequestModel model) {
         model.setId(id);
-        this.updateCategoryUserCases.update(model.toEntity());
+        this.updateCategoryUseCases.update(model.toEntity());
         return Response.ok().build();
     }
 
     @DELETE
     @Path("/{id}")
     public Response delete(final @PathParam("id") String id) {
-        this.deleteCategoryUserCases.delete(Long.parseLong(id));
+        this.deleteCategoryUseCases.delete(Long.parseLong(id));
         return Response.ok().build();
     }
 
     @GET
     @Path("/{id}")
     public CategoryResponseModel find(final @PathParam("id") Long id) {
-        return this.findCategoryUserCases.find(id).toModel();
+        return this.findCategoryUseCases.find(id).toModel();
     }
 
     @GET
