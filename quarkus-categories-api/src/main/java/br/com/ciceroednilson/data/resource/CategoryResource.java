@@ -23,7 +23,7 @@ public class CategoryResource {
     private final CreateCategoryUseCases createCategoryUseCases;
     private final UpdateCategoryUseCases updateCategoryUseCases;
     private final DeleteCategoryUseCases deleteCategoryUseCases;
-    private final FindCategoryUseCases findCategoryUseases;
+    private final FindCategoryUseCases findCategoryUseCases;
     private final SearchAllCategoriesUseCases searchAllCategoriesUseCases;
 
     @Inject
